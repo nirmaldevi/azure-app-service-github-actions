@@ -3,12 +3,12 @@ on: [push]
 
 jobs:
   build:
-    name: 'Build .NET Core App'
+    name: 'Build .NET 5 App'
     runs-on: 'ubuntu-latest'
     steps:
       - name: 'Checkout Code from Repository' 
         uses: actions/checkout@v2
-      - name: 'Set up .NET Core 3.1.x'
+      - name: 'Set up .NET 5.0.x'
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '5.0.x'
@@ -16,3 +16,10 @@ jobs:
         run: |
           cd src/
           dotnet publish -c Release --output './publish'
+      - name: 'Deploy to Azure App Service'
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'cloud-collective'
+          publish-profile: ${{ secrets.PUBLISH_PROFILE }}
+          package: ./publish
+
