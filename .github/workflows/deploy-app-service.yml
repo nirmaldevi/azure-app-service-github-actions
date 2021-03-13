@@ -15,11 +15,11 @@ jobs:
       - name: 'Publish a Release of the App'
         run: |
           cd src/
-          dotnet publish -c Release --output './publish'
+          dotnet publish -c Release --output '../published-app'
       - name: 'Deploy to Azure App Service'
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'CloudCollective'
           publish-profile: ${{ secrets.PUBLISH_PROFILE }}
-          package: ./publish
+          package: ./published-app
 
