@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   build:
-    name: 'Build .NET 5 App'
+    name: 'Build and Deploy a ASP.NET 5 App to Azure App Service'
     runs-on: 'ubuntu-latest'
     steps:
       - name: 'Checkout Code from Repository' 
