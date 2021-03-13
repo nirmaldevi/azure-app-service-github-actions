@@ -13,14 +13,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tobias/Code/azure-app-service-github-actions/CloudCollective/CloudCollective.csproj",
+      "projectUniqueName": "/Users/tobias/Code/azure-app-service-github-actions/src/CloudCollective.csproj",
       "projectName": "CloudCollective",
-      "projectPath": "/Users/tobias/Code/azure-app-service-github-actions/CloudCollective/CloudCollective.csproj",
+      "projectPath": "/Users/tobias/Code/azure-app-service-github-actions/src/CloudCollective.csproj",
       "packagesPath": "/Users/tobias/.nuget/packages/",
-      "outputPath": "/Users/tobias/Code/azure-app-service-github-actions/CloudCollective/obj/",
+      "outputPath": "/Users/tobias/Code/azure-app-service-github-actions/src/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/tobias/.nuget/NuGet/NuGet.Config"
+        "/Users/tobias/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

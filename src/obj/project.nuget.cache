@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z20DWLqbNdf2klZpbzbzbqilWQp1j4esSoUM5yE2t0lJ2gM96ewjqVJ5MalOEVEofa7RKQEkdN6dFIZdxkPhqw==",
+  "dgSpecHash": "Nk8BzxBU7cMoKAjJz1ksFzvJNaHxwNZ/wcguiWllTS0ZAvlF9zwyiOab6Z6g9WWNvBVyil8GUVHaovyIV05QIg==",
   "success": true,
-  "projectFilePath": "/Users/tobias/Code/azure-app-service-github-actions/CloudCollective/CloudCollective.csproj",
+  "projectFilePath": "/Users/tobias/Code/azure-app-service-github-actions/src/CloudCollective.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
