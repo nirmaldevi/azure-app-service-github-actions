@@ -16,10 +16,16 @@ jobs:
         run: |
           cd src/
           dotnet publish -c Release --output '../published-app'
-      - name: 'Deploy to Azure App Service'
+      - name: 'Deploy to Azure App Service: Frontdoor-web-app'
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'Frontdoor-web-app'
           publish-profile: ${{ secrets.PUBLISH_PROFILE_APP1 }}
+          package: ./published-app
+      - name: 'Deploy to Azure App Service: Frontdoor-secondary-web-app'
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'Frontdoor-secondary-web-app'
+          publish-profile: ${{ secrets.PUBLISH_PROFILE_APP2 }}
           package: ./published-app
 
