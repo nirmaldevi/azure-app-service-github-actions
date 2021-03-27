@@ -19,13 +19,13 @@ jobs:
       - name: 'Deploy to Azure App Service: Frontdoor-web-app'
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'Frontdoor-web-app'
+          app-name: 'frontdoorwebapp01'
           publish-profile: ${{ secrets.PUBLISH_PROFILE_APP1 }}
           package: ./published-app
       - name: 'Deploy to Azure App Service: Frontdoor-secondary-web-app'
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'Frontdoor-secondary-web-app'
+          app-name: 'frontdoorwebapp02'
           publish-profile: ${{ secrets.PUBLISH_PROFILE_APP2 }}
           package: ./published-app
 
