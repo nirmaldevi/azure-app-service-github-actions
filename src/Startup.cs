@@ -14,7 +14,7 @@ namespace CloudCollective
                 if(ctx.Request.Method.ToLower() == "get")
                 {
                     var appName = Environment.GetEnvironmentVariable("AppName");
-                    await ctx.Response.WriteAsync($"Greetings from '{appName}'");
+                    await ctx.Response.WriteAsync($"Greetggings from '{appName}'");
                 }
             });
         }
